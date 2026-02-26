@@ -1,0 +1,51 @@
+<idea-plugin>
+    <id>com.loremigliore.bonsai</id>
+    <name>Bonsai</name>
+    <vendor>loremigliore</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!--suppress PluginXmlValidity -->
+        <toolWindow
+                id="Bonsai"
+                factoryClass="com.loremigliore.bonsai.toolWindow.ProjectVisualWindowFactory"
+                icon="com.loremigliore.bonsai.ui.icons.PluginIcons.ToolWindowIcon"
+                anchor="left"
+                order="after Commit"
+                doNotActivateOnStart="true"/>
+
+        <applicationService
+                serviceImplementation="com.loremigliore.bonsai.logic.services.settings.BonsaiSettings"/>
+
+        <applicationConfigurable
+                parentId="tools"
+                id="visual.project.settings"
+                instance="com.loremigliore.bonsai.settings.BonsaiSettingsConfigurable"
+                key="settings.display.name"
+                bundle="messages.BonsaiBundle"/>
+
+        <postStartupActivity
+                implementation="com.loremigliore.bonsai.logic.startup.ProjectStructureStartupActivity"/>
+    </extensions>
+
+    <actions>
+        <action
+                id="com.loremigliore.bonsai.logic.actions.HideFoldersAction"
+                class="com.loremigliore.bonsai.logic.actions.HideFoldersAction"
+        />
+        <action
+                id="com.loremigliore.bonsai.logic.actions.HideFilesAction"
+                class="com.loremigliore.bonsai.logic.actions.HideFilesAction"
+        />
+        <action
+                id="com.loremigliore.bonsai.logic.actions.HideMiddlePackagesAction"
+                class="com.loremigliore.bonsai.logic.actions.HideMiddlePackagesAction"
+        />
+        <action
+                id="com.loremigliore.bonsai.logic.actions.ShrinkMiddlePackagesAction"
+                class="com.loremigliore.bonsai.logic.actions.ShrinkMiddlePackagesAction"
+        />
+    </actions>
+    <resource-bundle>messages.BonsaiBundle</resource-bundle>
+</idea-plugin>
