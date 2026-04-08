@@ -14,8 +14,8 @@ Plugin for Intellij based IDEs that provides a visual representation of your pro
 <div style="text-align: center;">
 
 ![Build](https://github.com/loremigliore/bonsai-project/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/30381-bonsai)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/30381-bonsai)
+[![Version](https://img.shields.io/jetbrains/plugin/v/30381-bonsai.svg)](https://plugins.jetbrains.com/plugin/30381-bonsai)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/30381-bonsai.svg)](https://plugins.jetbrains.com/plugin/30381-bonsai)
 </div>
 <h5>
 <!-- Plugin description -->
@@ -48,9 +48,9 @@ Additional features: integrated search, export project structure as JSON
 
 - Using JetBrains Marketplace:
 
-  Go to [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID) and install it by clicking the <kbd>Install to ...</kbd> button in case your IDE is running.
+  Go to [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/30381-bonsai) and install it by clicking the <kbd>Install to ...</kbd> button in case your IDE is running.
 
-  You can also download the [latest release](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID/versions) from JetBrains Marketplace and install it manually using
+  You can also download the [latest release](https://plugins.jetbrains.com/plugin/30381-bonsai/versions) from JetBrains Marketplace and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 - Manually:
